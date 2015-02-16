@@ -1,41 +1,41 @@
 ---
 layout: default
 body: blog
-title: Welcome to the Land of Jackorama and Llamas!!!
+title: News for Sony Mobile Xperia devices, CyanogenMod, and Android.
 ---
 
 {% for post in paginator.posts %}
 <material-card class="article">
-        <img style="width:100%; max-height:600px; border-radius: 5px;" src="{{ post.image }}"></img>
-        <h1>{{ post.title }}</h1>
-        {{ post.excerpt }}
-        <div style="margin-top: 20px;">
-                <a href"{{ post.url }}">
-                       <paper-button raised class="more">
-                               <core-icon icon="forward"></core-icon>
-                               Learn more
-                       </paper-button>
-                </a>
-        </div>
+	<img style="width:100%; max-height:600px; border-radius: 5px;" src="{{ post.image }}"></img>
+	<h1>{{ post.title }}</h1>
+	{{ post.excerpt }}
+	<div style="margin-top: 20px;">
+		<a href="{{ post.url }}">
+			<paper-button raised class="more">
+				<core-icon icon="forward"></core-icon>
+				Learn more
+			</paper-button>
+		</a>
+	</div>
 </material-card>
 {% endfor %}
 
 <!-- Pagination links -->
 <div class="pagination">
-        {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" class="next">
-                <paper-button raised class="next">
-                        <core-icon icon="arrow-back"></core-icon>
-                        Older
-                </paper-button>
-        </a>
-        {% endif %}
-        {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}" class="previous">
-                <paper-button raised class="previous">
-                        <core-icon icon="arrow-forward"></core-icon>
-                        Newer
-                </paper-button>
-        </a>
-        {% endif %}
+	{% if paginator.next_page %}
+	<a href="{{ paginator.next_page_path }}" class="next">
+		<paper-button raised class="next">
+			<core-icon icon="arrow-back"></core-icon>
+			Older
+		</paper-button>
+	</a>
+	{% endif %}
+	{% if paginator.previous_page %}
+	<a href="{{ paginator.previous_page_path }}" class="previous">
+		<paper-button raised class="previous">
+			<core-icon icon="arrow-forward"></core-icon>
+			Newer
+		</paper-button>
+	</a>
+	{% endif %}
 </div>
