@@ -1,0 +1,27 @@
+{% include top.html %}
+
+<body unresolved fullbleed>
+<core-scaffold id="scaffold">
+
+{% include menu.html %}
+
+<!-- Main title -->
+<!-- flex makes the bar span across the top of the main content area -->
+<core-toolbar tool flex>
+    <!-- flex spaces this element and jusifies the icons to the right-side -->
+    <div flex><strong><a id="toolbar" href="/">FXP Blog</a></strong></div>
+</core-toolbar>
+
+<!-- Main Content -->
+<div class="content_padding_outer" layout fit>
+<div class="content_padding_inner" layout fit>
+    <!-- fill with pages -->
+	<section class="content row">
+		<div style="padding: 10px 0;">{{ content }}</div>
+	</section>
+</div>
+</div>
+
+</core-scaffold>
+</body>
+</html>
