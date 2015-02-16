@@ -1,0 +1,174 @@
+body {
+  font-family: "RobotoDraft";
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #009688;
+}
+
+a {
+  text-decoration: none;
+  color: #009688;
+}
+
+a#toolbar {
+  color: white;
+}
+
+table { 
+    border-collapse: collapse; 
+}
+
+tr {
+    border-bottom: 1px solid #009688;
+}
+
+td {
+  padding: 15px 30px;
+}
+
+paper-button.more {
+  background: #009688;
+  color: white;
+}
+
+material-card.article {
+  color: inherit;
+}
+
+body /deep/ core-toolbar {
+  background-color: #009688;
+  color: #fff;
+}
+
+core-menu {
+  color: #616161;
+  margin: 10px 0 0 0;
+}
+
+core-menu > core-item {
+  transition: all 300ms ease-in-out;
+}
+
+core-item a {
+  text-decoration: none;
+  color: currentcolor;
+  margin-left: 5px;
+}
+
+core-menu > core-item.core-selected {
+  background: #e1f5fe;
+}
+
+core-menu /deep/ core-icon {
+  color: #009688;
+}
+
+.content_padding_outer {
+   margin: auto 20px;
+}
+
+.content_padding_inner {
+   margin: auto auto;
+   max-width: 860px;
+}
+
+.device_content {
+  display: inline-block;
+  min-width:calc(50% - 2px);
+  max-width:400px;
+}
+
+.device_content table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.device_content table tr.alt {
+  background-color: #f1f1f1;
+}
+
+.device_content table tr {
+  border: 0px;
+}
+
+.device_content table tr td {
+  padding: 10px;
+}
+
+.member_content {
+  display: inline-block;
+  min-width:192px;
+  max-width:192px;
+  text-align: center;
+}
+
+.member_image {
+  max-width: 250px;
+  margin: auto;
+}
+
+.member_image img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.family_device {
+  display: inline-block;
+  min-width:192px;
+  max-width:192px;
+}
+
+img.family {
+  width: 100%;
+}
+
+table.family_table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table.family_table tr, {
+    border-bottom: none;
+}
+
+table.family_table tr td {
+  padding: 3px 0;
+}
+
+@media only screen and (max-width: 1160px) {
+
+  .family_device {
+    max-width:calc(33.33% - 23px);
+  }
+
+}
+
+@media only screen and (max-width: 960px) {
+
+.content_padding_outer {
+   margin: auto 10px;
+}
+
+  .family_device {
+    max-width:calc(50% - 12px);
+    min-width:130px;
+  }
+
+  .device_content {
+    display: inline-block;
+    min-width:100%;
+    max-width:400px;
+  }
+
+  .member_content {
+    max-width:calc(50% - 12px);
+    min-width:130px;
+  }
+
+}
